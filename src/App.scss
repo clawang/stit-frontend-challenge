@@ -1,5 +1,10 @@
 $orange: #ff7e54;
 
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url("./apercu_regular_pro.otf") format('opentype');
+}
+
 * {
   margin: 0;
   padding: 0; 
