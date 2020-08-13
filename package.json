@@ -1,6 +1,6 @@
 {
   "name": "stit-frontend-challenge",
-  "homepage": "http://clawang.github.io/stit-frontend-challenge"
+  "homepage": "http://clawang.github.io/stit-frontend-challenge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
