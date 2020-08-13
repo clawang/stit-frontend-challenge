@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import List from './List';
+import React from 'react';
 import loadData from './loadData';
-import Header from './Header';
 import filledStar from '../star.svg';
 import unfilledStar from '../unfilled.svg';
 import halfStar from '../halfstar.svg';
@@ -11,7 +8,7 @@ import {Link} from "react-router-dom";
 let id = "KgpOYAG-r_eDsQXFXt0nnQ";
 
 function RestaurantDetails(props) {
-	const ContentLoading = loadData(RestaurantDetailsContent, {}, "KgpOYAG-r_eDsQXFXt0nnQ");
+	const ContentLoading = loadData(RestaurantDetailsContent, {}, id);
 
 	return (
 		<ContentLoading />
@@ -78,15 +75,6 @@ function RestaurantDetailsContent(props) {
 					</div>
 				</div>
 			</div>
-			<footer>
-				<div className='footer'>
-					Built{' '}
-					<span role='img' aria-label='love'>
-					💚
-					</span>{' '}
-					with by Claire Wang
-				</div>
-			</footer>
 		</div>
 	);
 }
@@ -98,7 +86,7 @@ function DisplayStar(props) {
 		'half': halfStar
 	};
 	return (
-		<img src={src[props.type]} />
+		<img src={src[props.type]} alt="restaurant" />
 	);
 }
 

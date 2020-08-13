@@ -34,7 +34,7 @@ const ListItem = (props) => {
     <div className="restaurant-card-wrapper">
       <div className="restaurant-card">
         <div className="restaurant-card-img">
-          <img src={props.res.image_url} />
+          <img src={props.res.image_url} alt={props.res.name} />
         </div>
         <div className="restaurant-card-text">
           <p className="cuisine">{props.res.categories[0].title}</p>

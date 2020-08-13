@@ -1,7 +1,7 @@
 /*global google*/
 
 import React from 'react';
-import { Map, GoogleApiWrapper, Circle, Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import youAreHere from '../marker.png';
 import customIcon from '../pin.png';
 

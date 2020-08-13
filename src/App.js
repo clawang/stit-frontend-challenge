@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
-  useLocation
+  Route
 } from "react-router-dom";
 import './App.scss';
 import RestaurantsNear from './components/restaurantsNear';

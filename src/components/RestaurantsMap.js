@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { geolocated } from "react-geolocated";
-import { Map, GoogleApiWrapper } from 'google-maps-react';
-import axios from 'axios';
 import List from './List';
 import loadData from './loadData';
-import Header from './Header';
 import MapWidget from './MapWidget';
 import {Link} from "react-router-dom";
 import Loading from './Loading';

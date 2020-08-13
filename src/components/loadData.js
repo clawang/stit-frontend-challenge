@@ -19,7 +19,6 @@ function loadData(Component, queries, id) {
 			params: queries
 		})
 		.then((res) => {
-			console.log(res.data);
 			let obj = res.data.businesses || res.data;
 			setAppState({ loading: false, data: obj});
 		});

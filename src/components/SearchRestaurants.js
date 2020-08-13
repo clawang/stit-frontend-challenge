@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { geolocated } from "react-geolocated";
-import axios from 'axios';
+import React from 'react';
 import List from './List';
 import loadData from './loadData';
-import Header from './Header';
 import {Link} from "react-router-dom";
 
 function SearchRestaurants(props) {
@@ -42,15 +39,6 @@ function SearchRestaurantsContent(props) {
 				</div>
 			</div>
 			<List restaurants={props.data} type="search" />
-			<footer>
-				<div className='footer'>
-					Built{' '}
-					<span role='img' aria-label='love'>
-					💚
-					</span>{' '}
-					with by Claire Wang
-				</div>
-			</footer>
 		</div>
 	);
 }
