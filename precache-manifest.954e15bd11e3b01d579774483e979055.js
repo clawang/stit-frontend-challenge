@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "193a6065a34b6814218a9e782d099724",
+    "revision": "2c702ab57cb192c61af5d33f81e4df8e",
     "url": "/stit-frontend-challenge/index.html"
   },
   {
-    "revision": "0525b75649cd23b6c648",
+    "revision": "595cb1b0b937c3bbb3d2",
     "url": "/stit-frontend-challenge/static/css/main.8bf9a710.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0525b75649cd23b6c648",
-    "url": "/stit-frontend-challenge/static/js/main.b63287f6.chunk.js"
+    "revision": "595cb1b0b937c3bbb3d2",
+    "url": "/stit-frontend-challenge/static/js/main.78997184.chunk.js"
   },
   {
     "revision": "20a4eba6eeef96d64df2",
