@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/stit-frontend-challenge/static/css/main.102ea963.chunk.css",
-    "main.js": "/stit-frontend-challenge/static/js/main.78997184.chunk.js",
-    "main.js.map": "/stit-frontend-challenge/static/js/main.78997184.chunk.js.map",
+    "main.js": "/stit-frontend-challenge/static/js/main.0a0a85ae.chunk.js",
+    "main.js.map": "/stit-frontend-challenge/static/js/main.0a0a85ae.chunk.js.map",
     "runtime-main.js": "/stit-frontend-challenge/static/js/runtime-main.eb112289.js",
     "runtime-main.js.map": "/stit-frontend-challenge/static/js/runtime-main.eb112289.js.map",
-    "static/js/2.d55948b6.chunk.js": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js",
-    "static/js/2.d55948b6.chunk.js.map": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js.map",
+    "static/js/2.189c3b27.chunk.js": "/stit-frontend-challenge/static/js/2.189c3b27.chunk.js",
+    "static/js/2.189c3b27.chunk.js.map": "/stit-frontend-challenge/static/js/2.189c3b27.chunk.js.map",
     "index.html": "/stit-frontend-challenge/index.html",
-    "precache-manifest.cf16413e7ad86a618182ec1447c35ef3.js": "/stit-frontend-challenge/precache-manifest.cf16413e7ad86a618182ec1447c35ef3.js",
+    "precache-manifest.1c0eb1c6e5fe7e6b5bfa71742f61184a.js": "/stit-frontend-challenge/precache-manifest.1c0eb1c6e5fe7e6b5bfa71742f61184a.js",
     "service-worker.js": "/stit-frontend-challenge/service-worker.js",
     "static/css/main.102ea963.chunk.css.map": "/stit-frontend-challenge/static/css/main.102ea963.chunk.css.map",
-    "static/js/2.d55948b6.chunk.js.LICENSE.txt": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js.LICENSE.txt",
+    "static/js/2.189c3b27.chunk.js.LICENSE.txt": "/stit-frontend-challenge/static/js/2.189c3b27.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/stit-frontend-challenge/static/media/cafe.a2373d8b.jpg",
     "static/media/halfstar.svg": "/stit-frontend-challenge/static/media/halfstar.74f8e421.svg",
     "static/media/marker.png": "/stit-frontend-challenge/static/media/marker.f00d58bd.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eb112289.js",
-    "static/js/2.d55948b6.chunk.js",
+    "static/js/2.189c3b27.chunk.js",
     "static/css/main.102ea963.chunk.css",
-    "static/js/main.78997184.chunk.js"
+    "static/js/main.0a0a85ae.chunk.js"
   ]
 }

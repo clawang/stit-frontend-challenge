@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1dbcc16d2e84bc37432ebcc215657202",
+    "revision": "737ca6319dcea509ca77a44c7253987e",
     "url": "/stit-frontend-challenge/index.html"
   },
   {
-    "revision": "129f90d89ae4fc5a6d57",
+    "revision": "a7d6e4b6d1a608d2971a",
     "url": "/stit-frontend-challenge/static/css/main.102ea963.chunk.css"
   },
   {
-    "revision": "a2a0bac1b686bf42a423",
-    "url": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js"
+    "revision": "7fc65a5eb752cd4774ad",
+    "url": "/stit-frontend-challenge/static/js/2.189c3b27.chunk.js"
   },
   {
     "revision": "54fd6816419f7824e2804745930c9117",
-    "url": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js.LICENSE.txt"
+    "url": "/stit-frontend-challenge/static/js/2.189c3b27.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "129f90d89ae4fc5a6d57",
-    "url": "/stit-frontend-challenge/static/js/main.78997184.chunk.js"
+    "revision": "a7d6e4b6d1a608d2971a",
+    "url": "/stit-frontend-challenge/static/js/main.0a0a85ae.chunk.js"
   },
   {
     "revision": "20a4eba6eeef96d64df2",
