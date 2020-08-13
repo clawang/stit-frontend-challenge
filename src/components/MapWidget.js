@@ -11,6 +11,11 @@ function MapWidget(props) {
 	  height: '100%',
 	};
 
+	const coords = {
+		lat: props.latitude || 40.729335,
+		long: props.longitude || -73.997903
+	}
+
 	const displayMarkers = props.points.map((store, index) => {
 	    return <Marker key={index} id={index} position={{
 	       lat: store.coordinates.latitude,
@@ -192,13 +197,13 @@ function MapWidget(props) {
           google={props.google}
           zoom={12}
           style={mapStyles}
-          initialCenter={{ lat: props.latitude, lng: props.longitude}} 
+          initialCenter={{ lat: coords.lat, lng: coords.long}} 
           onReady={(mapProps, map) => _mapLoaded(mapProps, map)}
         >
         	<Marker
         		key={1234}
 			    name={'Your location'}
-			    position={{ lat: props.latitude, lng: props.longitude}}
+			    position={{ lat: coords.lat, lng: coords.long}}
 			    icon={{
 			      url: youAreHere,
 			      scaledSize: new google.maps.Size(24,24)

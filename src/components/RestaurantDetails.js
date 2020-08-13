@@ -1,18 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import loadData from './loadData';
 import filledStar from '../star.svg';
 import unfilledStar from '../unfilled.svg';
 import halfStar from '../halfstar.svg';
 import {Link} from "react-router-dom";
+import Loading from './Loading';
 
 let id = "KgpOYAG-r_eDsQXFXt0nnQ";
 
 function RestaurantDetails(props) {
-	const ContentLoading = loadData(RestaurantDetailsContent, {}, id);
+	const [appState, setAppState] = useState({
+		latitude: null,
+		longitude: null,
+		loading: true
+	});
 
+	useEffect(() => {
+		navigator.geolocation.getCurrentPosition(
+			function(position) {
+				setAppState({latitude: position.coords.latitude, longitude: position.coords.longitude, loading: false});
+	    	},
+		    function(error) {
+		    	setAppState({location: 'new york', loading: false});
+		    }
+	    );
+	}, [setAppState]);
+
+	if(!appState.loading) {
+		const ContentLoading = loadData(RestaurantDetailsContent, {}, id);
+		return (
+			<ContentLoading lat={appState.latitude} long={appState.longitude} />
+		);	
+	}
 	return (
-		<ContentLoading />
-	);	
+		<Loading />
+	);
 }
 
 function RestaurantDetailsContent(props) {
@@ -29,6 +51,14 @@ function RestaurantDetailsContent(props) {
 	let unfilled = 5 - filled - half;
 	for(let i = 0; i < unfilled; i++) {
 		stars.push('unfilled');
+	}
+
+	const calcDistance = () => {
+		let lat = props.data.coordinates.latitude;
+		let long = props.data.coordinates.longitude;
+		let x = Math.abs(lat - props.lat);
+		let y = Math.abs(long - props.long);
+		return Math.round(Math.sqrt(x*x + y*y) * 6900) /100;
 	}
 	
 	return (
@@ -57,10 +87,11 @@ function RestaurantDetailsContent(props) {
 						<h1>{props.data.name}</h1>
 						<div className="details">
 							<div className="star-container">
-							{stars.map((type) => <DisplayStar type={type} />)}
+							{stars.map((type, index) => <DisplayStar type={type} key={index} />)}
 							</div>
 							<p>{props.data.review_count + " reviews"}</p>
 						</div>
+						{props.lat ? <p>{calcDistance()} mi away</p> : ""}
 					</div>
 					<div className="details-right">
 						<div className="address">
