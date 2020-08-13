@@ -12,7 +12,7 @@ import SearchRestaurants from './components/SearchRestaurants';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Switch>
           <Route path="/details" component={RestaurantDetails} />
