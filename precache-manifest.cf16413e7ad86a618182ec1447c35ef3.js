@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c702ab57cb192c61af5d33f81e4df8e",
+    "revision": "1dbcc16d2e84bc37432ebcc215657202",
     "url": "/stit-frontend-challenge/index.html"
   },
   {
-    "revision": "595cb1b0b937c3bbb3d2",
-    "url": "/stit-frontend-challenge/static/css/main.8bf9a710.chunk.css"
+    "revision": "129f90d89ae4fc5a6d57",
+    "url": "/stit-frontend-challenge/static/css/main.102ea963.chunk.css"
   },
   {
     "revision": "a2a0bac1b686bf42a423",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "595cb1b0b937c3bbb3d2",
+    "revision": "129f90d89ae4fc5a6d57",
     "url": "/stit-frontend-challenge/static/js/main.78997184.chunk.js"
   },
   {
     "revision": "20a4eba6eeef96d64df2",
     "url": "/stit-frontend-challenge/static/js/runtime-main.eb112289.js"
+  },
+  {
+    "revision": "c4eb433996001178dc185a0db392344b",
+    "url": "/stit-frontend-challenge/static/media/apercu_regular_pro.c4eb4339.otf"
   },
   {
     "revision": "a2373d8bf821fc3341212d14083e961e",

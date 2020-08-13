@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stit-frontend-challenge/static/css/main.8bf9a710.chunk.css",
+    "main.css": "/stit-frontend-challenge/static/css/main.102ea963.chunk.css",
     "main.js": "/stit-frontend-challenge/static/js/main.78997184.chunk.js",
     "main.js.map": "/stit-frontend-challenge/static/js/main.78997184.chunk.js.map",
     "runtime-main.js": "/stit-frontend-challenge/static/js/runtime-main.eb112289.js",
@@ -8,9 +8,9 @@
     "static/js/2.d55948b6.chunk.js": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js",
     "static/js/2.d55948b6.chunk.js.map": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js.map",
     "index.html": "/stit-frontend-challenge/index.html",
-    "precache-manifest.954e15bd11e3b01d579774483e979055.js": "/stit-frontend-challenge/precache-manifest.954e15bd11e3b01d579774483e979055.js",
+    "precache-manifest.cf16413e7ad86a618182ec1447c35ef3.js": "/stit-frontend-challenge/precache-manifest.cf16413e7ad86a618182ec1447c35ef3.js",
     "service-worker.js": "/stit-frontend-challenge/service-worker.js",
-    "static/css/main.8bf9a710.chunk.css.map": "/stit-frontend-challenge/static/css/main.8bf9a710.chunk.css.map",
+    "static/css/main.102ea963.chunk.css.map": "/stit-frontend-challenge/static/css/main.102ea963.chunk.css.map",
     "static/js/2.d55948b6.chunk.js.LICENSE.txt": "/stit-frontend-challenge/static/js/2.d55948b6.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/stit-frontend-challenge/static/media/cafe.a2373d8b.jpg",
     "static/media/halfstar.svg": "/stit-frontend-challenge/static/media/halfstar.74f8e421.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.eb112289.js",
     "static/js/2.d55948b6.chunk.js",
-    "static/css/main.8bf9a710.chunk.css",
+    "static/css/main.102ea963.chunk.css",
     "static/js/main.78997184.chunk.js"
   ]
 }
