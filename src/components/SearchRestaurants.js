@@ -3,7 +3,6 @@ import List from './List';
 import loadData from './loadData';
 import Nav from './Nav';
 import Loading from './Loading';
-import submitImg from '../go.svg';
 
 function SearchRestaurants(props) {
 	const [appState, setAppState] = useState({
@@ -40,6 +39,7 @@ function SearchRestaurants(props) {
       	alert('Please enter text into the search field!');
       }
   	}
+
   	if(!appState.loading) {
 		const ContentLoading = loadData(SearchRestaurantsContent, query, false);
 		
