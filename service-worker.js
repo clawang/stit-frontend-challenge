@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/stit-frontend-challenge/precache-manifest.1c0eb1c6e5fe7e6b5bfa71742f61184a.js"
+  "/stit-frontend-challenge/precache-manifest.d21f0842b7fdba721d7f4be79f72ee9f.js"
 );
 
 self.addEventListener('message', (event) => {
