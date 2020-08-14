@@ -25,13 +25,13 @@ function RestaurantsMap(props) {
 	}, [setAppState]);
 
 	if(!appState.loading) {
-		const ContentLoading = loadData(RestaurantsMapContent, {latitude: appState.latitude, longitude: appState.longitude, location: 'new york', categories: 'restaurants'});
+		const ContentLoading = loadData(RestaurantsMapContent, {latitude: appState.latitude, longitude: appState.longitude, location: 'new york', categories: 'restaurants'}, true);
 		return (
 			<ContentLoading latitude={appState.latitude} longitude={appState.longitude} />
 		);	
 	}
 	return (
-		<Loading />
+		<Loading fullscreen={true} />
 	);
 	
 }

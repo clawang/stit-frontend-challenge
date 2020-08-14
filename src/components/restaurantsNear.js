@@ -24,7 +24,7 @@ function RestaurantsNear(props) {
 	}, [setAppState]);
 
 	if(!appState.loading) {
-		const ContentLoading = loadData(RestaurantsNearContent, {latitude: appState.latitude, longitude: appState.longitude, location: 'new york', categories: 'restaurants'});
+		const ContentLoading = loadData(RestaurantsNearContent, {latitude: appState.latitude, longitude: appState.longitude, location: 'new york', categories: 'restaurants'}, true);
 		return (
 			<ContentLoading />
 		);	

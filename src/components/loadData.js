@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Loading from './Loading';
 
-function loadData(Component, queries, id) {
+function loadData(Component, queries, fullscreen, id) {
   return function WihLoadingComponent({ isLoading, ...props }) {
 	const [appState, setAppState] = useState({
 		loading: true,
@@ -28,7 +28,7 @@ function loadData(Component, queries, id) {
 
     if (!appState.loading) return <Component {...props} data={appState.data} />;
     return (
-      <Loading />
+      <Loading fullscreen={fullscreen}/>
     );
   };
 }

@@ -27,13 +27,13 @@ function RestaurantDetails(props) {
 	}, [setAppState]);
 
 	if(!appState.loading) {
-		const ContentLoading = loadData(RestaurantDetailsContent, {}, id);
+		const ContentLoading = loadData(RestaurantDetailsContent, {}, true, id);
 		return (
 			<ContentLoading lat={appState.latitude} long={appState.longitude} />
 		);	
 	}
 	return (
-		<Loading />
+		<Loading fullscreen={true} />
 	);
 }
 

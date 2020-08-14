@@ -13,7 +13,7 @@ const List = (props) => {
 
   const term = {
     near: restaurants[0].location.city,
-    search: 'Balthazar'
+    search: props.term
   }
 
   return (

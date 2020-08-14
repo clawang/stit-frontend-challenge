@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Loading() {
+function Loading(props) {
 	return (
-		<div className="loading">
+		<div className={"loading " + (props.fullscreen ? "" : "small")}>
 			<div className="loading-symbol"></div>
 		</div>
 	);

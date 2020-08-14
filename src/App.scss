@@ -98,10 +98,22 @@ nav {
     position: absolute;
     padding-top: 5rem;
 
-    input {
+    input[type=text] {
       width: 60%;
       padding: 1em;
       font-family:'Apercu Pro';
+    }
+
+    input[type=submit] {
+      width: 2.5em;
+      height: 2.5em;
+      background: transparent;
+      background-image:url('./go.svg');
+      background-size: cover;
+      border:0;
+      margin-left: -3em;
+      color: transparent;
+      cursor: pointer;
     }
   }
 
@@ -309,6 +321,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.loading.small {
+  width: 100%;
+  height: auto;
+  margin: 7em 2em 2em;
 }
 
 .loading-symbol {
