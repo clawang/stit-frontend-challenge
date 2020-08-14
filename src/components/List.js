@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const List = (props) => {
   const { restaurants } = props;
@@ -30,21 +31,27 @@ const List = (props) => {
 };
 
 const ListItem = (props) => {
+  const newTo = { 
+    pathname: "/details", 
+    id: props.res.id
+  };
   return(
     <div className="restaurant-card-wrapper">
-      <div className="restaurant-card">
-        <div className="restaurant-card-img">
-          <img src={props.res.image_url} alt={props.res.name} />
-        </div>
-        <div className="restaurant-card-text">
-          <p className="cuisine">{props.res.categories[0].title}</p>
-          <h3>{props.res.name}</h3>
-          <div className="restaurant-details">
-            <p>{props.res.location.address1}</p>
-            <p>{props.res.price}</p>
+      <Link to={newTo}>
+        <div className="restaurant-card">
+          <div className="restaurant-card-img">
+            <img src={props.res.image_url} alt={props.res.name} />
+          </div>
+          <div className="restaurant-card-text">
+            <p className="cuisine">{props.res.categories[0].title}</p>
+            <h3>{props.res.name}</h3>
+            <div className="restaurant-details">
+              <p>{props.res.location.address1}</p>
+              <p>{props.res.price}</p>
+            </div>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

@@ -3,10 +3,8 @@ import loadData from './loadData';
 import filledStar from '../star.svg';
 import unfilledStar from '../unfilled.svg';
 import halfStar from '../halfstar.svg';
-import {Link} from "react-router-dom";
 import Loading from './Loading';
-
-let id = "KgpOYAG-r_eDsQXFXt0nnQ";
+import Nav from './Nav';
 
 function RestaurantDetails(props) {
 	const [appState, setAppState] = useState({
@@ -14,6 +12,8 @@ function RestaurantDetails(props) {
 		longitude: null,
 		loading: true
 	});
+
+	let id = props.location.id || "KgpOYAG-r_eDsQXFXt0nnQ";
 
 	useEffect(() => {
 		navigator.geolocation.getCurrentPosition(
@@ -63,22 +63,7 @@ function RestaurantDetailsContent(props) {
 	
 	return (
 		<div className="restaurant-details">
-			<nav>
-	          <ul>
-	            <li>
-	              <Link to="/">Restaurants Near You</Link>
-	            </li>
-	            <li>
-	              <Link to="/details">Restaurant Details</Link>
-	            </li>
-	            <li>
-	              <Link to="/search">Search Restaurants</Link>
-	            </li>
-	            <li>
-	              <Link to="/map">Map View</Link>
-	            </li>
-	          </ul>
-	        </nav>
+			<Nav />
 			<div className="header-wrapper" style={{'backgroundImage':'url(' + props.data.image_url +')'}}>
 			</div>
 			<div className="container">

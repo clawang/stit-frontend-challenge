@@ -1,7 +1,7 @@
 import React from 'react';
 import List from './List';
 import loadData from './loadData';
-import {Link} from "react-router-dom";
+import Nav from './Nav';
 
 function SearchRestaurants(props) {
 	const ContentLoading = loadData(SearchRestaurantsContent, {location: 'new york', term: 'Balthazar'});
@@ -14,22 +14,7 @@ function SearchRestaurants(props) {
 function SearchRestaurantsContent(props) {
 	return (
 		<div>
-			<nav>
-	          <ul>
-	            <li>
-	              <Link to="/">Restaurants Near You</Link>
-	            </li>
-	            <li>
-	              <Link to="/details">Restaurant Details</Link>
-	            </li>
-	            <li>
-	              <Link to="/search">Search Restaurants</Link>
-	            </li>
-	            <li>
-	              <Link to="/map">Map View</Link>
-	            </li>
-	          </ul>
-	        </nav>
+			<Nav />
 			<div className="header-wrapper">
 				<div className="header">
 				</div>

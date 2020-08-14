@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import List from './List';
 import loadData from './loadData';
 import MapWidget from './MapWidget';
-import {Link} from "react-router-dom";
 import Loading from './Loading';
+import Nav from './Nav';
 
 function RestaurantsMap(props) {
 	const [appState, setAppState] = useState({
@@ -39,22 +39,7 @@ function RestaurantsMap(props) {
 function RestaurantsMapContent(props) {
 	return (
 		<div className="restaurants-map">
-			<nav className="map-nav">
-	          <ul>
-	            <li>
-	              <Link to="/">Restaurants Near You</Link>
-	            </li>
-	            <li>
-	              <Link to="/details">Restaurant Details</Link>
-	            </li>
-	            <li>
-	              <Link to="/search">Search Restaurants</Link>
-	            </li>
-	            <li>
-	              <Link to="/map">Map View</Link>
-	            </li>
-	          </ul>
-	        </nav>
+			<Nav color="white" />
 			<div className="restaurants-map-wrapper">
 				<div className="list-wrapper">
 					<List restaurants={props.data} type="near" />

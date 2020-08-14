@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import List from './List';
 import loadData from './loadData';
-import {Link} from "react-router-dom";
 import Loading from './Loading';
+import Nav from './Nav';
 
 function RestaurantsNear(props) {
 	const [appState, setAppState] = useState({
@@ -38,22 +38,7 @@ function RestaurantsNear(props) {
 function RestaurantsNearContent(props) {
 	return (
 		<div>
-			<nav>
-	          <ul>
-	            <li>
-	              <Link to="/">Restaurants Near You</Link>
-	            </li>
-	            <li>
-	              <Link to="/details">Restaurant Details</Link>
-	            </li>
-	            <li>
-	              <Link to="/search">Search Restaurants</Link>
-	            </li>
-	            <li>
-	              <Link to="/map">Map View</Link>
-	            </li>
-	          </ul>
-	        </nav>
+			<Nav />
 			<div className="header-wrapper">
 				<div className="header">
 				</div>

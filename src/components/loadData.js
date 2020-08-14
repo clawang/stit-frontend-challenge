@@ -11,6 +11,8 @@ function loadData(Component, queries, id) {
 
 	useEffect(() => {
 		setAppState({ loading: true });
+		queries.limit = 18;
+		console.log(queries);
 		const apiUrl = id ? `${'https://cors-anywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/${id}` : `${'https://cors-anywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search`;
 		axios.get(apiUrl, {
 			headers: {

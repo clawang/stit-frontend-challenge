@@ -136,6 +136,11 @@ nav {
   max-width: 30.3333%;
   flex: 0 0 33.3333%;
   padding: 1em;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .restaurant-card {
